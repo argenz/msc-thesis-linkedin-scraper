@@ -1,0 +1,23 @@
+2023-01-05 11:55:53,245|main_public_ids:40|INFO|iteration i = 0: Currently searching =  Person: . Friedel
+2023-01-05 11:55:53,249|main_public_ids:42|INFO|Sequence companies: ['bhs bank']
+2023-01-05 11:55:53,249|main_public_ids:51|INFO|API Request with,  Keywords: . Friedel bhs bank
+2023-01-05 11:55:59,329|main_public_ids:56|WARNING|There were no search results for people with this credentials: ('. Friedel', 'bhs bank')
+2023-01-05 11:55:59,329|main_public_ids:63|INFO|ROW: [0, '. Friedel', nan, 'bhs bank']
+2023-01-05 11:55:59,329|main_public_ids:40|INFO|iteration i = 1: Currently searching =  Person: . MacEntire
+2023-01-05 11:55:59,336|main_public_ids:42|INFO|Sequence companies: ['td securities']
+2023-01-05 11:55:59,337|main_public_ids:51|INFO|API Request with,  Keywords: . MacEntire td securities
+2023-01-05 11:56:04,237|main_public_ids:56|WARNING|There were no search results for people with this credentials: ('. MacEntire', 'td securities')
+2023-01-05 11:56:04,238|main_public_ids:63|INFO|ROW: [1, '. MacEntire', nan, 'td securities']
+2023-01-05 11:56:04,238|main_public_ids:40|INFO|iteration i = 2: Currently searching =  Person: . Millozzi
+2023-01-05 11:56:04,244|main_public_ids:42|INFO|Sequence companies: ['deloitte']
+2023-01-05 11:56:04,244|main_public_ids:51|INFO|API Request with,  Keywords: . Millozzi deloitte
+2023-01-05 11:56:12,241|main_public_ids:60|WARNING|FOUND - Public ID for . Millozzi which is gianluca-millozzi-b97375
+2023-01-05 11:56:12,242|main_public_ids:63|INFO|ROW: [2, '. Millozzi', 'gianluca-millozzi-b97375', 'deloitte']
+2023-01-05 11:56:12,242|main_public_ids:40|INFO|iteration i = 3: Currently searching =  Person: A Constantini
+2023-01-05 11:56:12,248|main_public_ids:42|INFO|Sequence companies: ['alfred berg asset management']
+2023-01-05 11:56:12,248|main_public_ids:51|INFO|API Request with,  Keywords: A Constantini alfred berg asset management
+2023-01-05 11:56:15,717|main_public_ids:56|WARNING|There were no search results for people with this credentials: ('A Constantini', 'alfred berg asset management')
+2023-01-05 11:56:15,717|main_public_ids:63|INFO|ROW: [3, 'A Constantini', nan, 'alfred berg asset management']
+2023-01-05 11:56:15,717|main_public_ids:40|INFO|iteration i = 4: Currently searching =  Person: A. Andrew
+2023-01-05 11:56:15,721|main_public_ids:42|INFO|Sequence companies: []
+2023-01-05 11:56:15,721|main_public_ids:51|INFO|API Request with,  Keywords: A. Andrew

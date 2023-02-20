@@ -1,0 +1,27 @@
+
+#Copy downloaded files from container to host
+
+
+#link host to container 
+docker run -v "$(pwd)/src/files:/usr/app/src/files" scrp1 
+
+# docker cp 2b0ae1:/usr/app/src/files/advisors_public_ids.csv /Users/fcra/Desktop/exports/advisors_public_ids_scrp11a.csv
+docker cp bf27c2233bd3:/usr/app/src/files /Users/fcra/Desktop/LNKDN_Scraper/UEC2/download 
+
+docker cp [container ID]:[container directory] [host directory]
+
+# build container 
+docker build -t [name of image] [directory of Dockerfile]
+
+# rstart and un container from image in bash 
+docker run -it [image name] /bin/bash
+
+# run existing container 
+docker start [container name] #prints back name of container
+
+### SO NOW: 
+1. decide how many processes to run 
+2. create multiple linkeding profiles 
+3. create multiple containes with specific config & main_public_ids.py range 
+4. run all processes 
+

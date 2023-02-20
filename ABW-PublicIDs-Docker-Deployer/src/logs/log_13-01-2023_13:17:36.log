@@ -1,0 +1,5 @@
+2023-01-13 13:17:40,554|main_public_ids:47|INFO|iteration 0: Currently searching =  Person: . Friedel
+2023-01-13 13:17:40,558|main_public_ids:49|INFO|Sequence companies: ['bhs bank']
+2023-01-13 13:17:40,558|main_public_ids:58|INFO|API Request with,  Keywords: . Friedel bhs bank
+2023-01-13 13:17:44,145|main_public_ids:63|WARNING|There were no search results for people with this credentials: ('. Friedel', 'bhs bank')
+2023-01-13 13:17:44,145|main_public_ids:70|INFO|ROW: [0, '. Friedel', nan, 'bhs bank']
