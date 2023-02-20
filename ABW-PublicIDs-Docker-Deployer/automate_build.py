@@ -12,11 +12,12 @@ log.basicConfig(level=log.INFO, format='%(asctime)s|%(module)s:%(lineno)s|%(leve
 
 # GLOBAL VARS: 
 
-# the advisors indexes to search - from 0 to 43000 circa.
-index_pairs = [[23766, 23767], [31483, 31485], [35629, 35685]] 
+# the advisors indexes to search - one container deployed for each range in this list - my sample was 43000 circa profiles.
+index_pairs = [[0, 400], [401, 800], [801, 1000]] #then keep going 
 
 # the emails (passwords were all created equal, so only email necessary. At each run of this file, change the email. 
-email = "giannirotelle@outlook.com"
+email = "email"
+pwd = "password
 
 app_path = os.getcwd() 
 log.info(f"The APP's PATH IS: {app_path}")
@@ -24,7 +25,7 @@ log.info(f"The APP's PATH IS: {app_path}")
 client = docker.from_env()
 log.info("Created docker Client.")
 
-write_config_py(f"{app_path}/src/config.py", email)
+write_config_py(f"{app_path}/src/config.py", email, pwd)
 
 containers = []
 for pair in index_pairs: 
@@ -36,7 +37,7 @@ for pair in index_pairs:
 
     image_tag = f"scrp_{start}_{end}"
 
-    client.images.build(path="/Users/fcra/Desktop/LNKDN_Scraper/ABW", tag=image_tag, rm=True) #Change to current & relevant
+    client.images.build(path="/.../ABW", tag=image_tag, rm=True) #Change to current & relevant
     log.info(f"Created Image {image_tag}")
 
     container = client.containers.run(image_tag, detach=True)
@@ -53,7 +54,7 @@ log.info(f"All containers sucessfully exited.")
 
 # export local container files onto host
 for index in range(len(containers)): 
-    copy_cmd = f"docker cp {containers[index].id}:/usr/app/src/files/advisors_public_ids.csv /Users/fcra/Desktop/exports/advisors_public_ids_{index_pairs[index][0]}_{index_pairs[index][1]}.csv "
+    copy_cmd = f"docker cp {containers[index].id}:/usr/app/src/files/advisors_public_ids.csv /.../Desktop/exports/advisors_public_ids_{index_pairs[index][0]}_{index_pairs[index][1]}.csv "
     os.system(copy_cmd)
     log.info(f"Exported files from {containers[index].id}.")
 
