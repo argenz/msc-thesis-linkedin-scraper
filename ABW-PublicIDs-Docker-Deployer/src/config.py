@@ -1,2 +1,2 @@
-email = "cr2016659@gmail.com"
-pwd = "LinkedinMember.1998"     
+email = "Linkedin email"
+pwd = "Linkedin password"     
