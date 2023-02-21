@@ -14,7 +14,7 @@ from utils import write_in_restricted
 
 log.basicConfig(filename=f'logs/log_{datetime.now().strftime("%d-%m-%Y_%H:%M:%S")}.log', level=log.INFO, format='%(asctime)s|%(module)s:%(lineno)s|%(levelname)s|%(message)s') 
 
-# Get list of fake accounts that the script can iterate through if they get restricted by LinkedIn
+# Get list of accounts that the script can iterate through if they get restricted by LinkedIn
 accounts = pd.read_csv("./files/accounts.csv", sep=";")
 
 # Data Access Object for bankers
